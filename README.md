@@ -1,1 +1,3 @@
-# Desktop_automation_using_python
+# Desktop automation code using Python
+
+###  The code is in its initial stage
