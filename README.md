@@ -1,3 +1,4 @@
-# Desktop automation code using Python
+#    Desktop automation code using Python
 
-###  The code is in its initial stage
+
+      -   The code is in its initial stage
