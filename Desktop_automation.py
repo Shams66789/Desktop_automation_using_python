@@ -36,7 +36,7 @@ def takeComand():
     with sr.Microphone() as source:
         print("Listening....")
         r.pause_threshold = 0.5
-        r.energy_threshold = 500
+        r.energy_threshold = 1000
         audio = r.listen(source)
 
     try:
@@ -66,9 +66,12 @@ if __name__ == '__main__':
         query = takeComand().lower()
 
         if 'google' in query:
-            url1 = 'google.com'
-            site(url1)
+            url = 'google.com'
+            site(url)
 
         elif 'youtube' in query:
             url = 'youtube.com'
             site(url)
+
+        elif 'close' in query:
+            break
