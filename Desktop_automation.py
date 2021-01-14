@@ -73,5 +73,17 @@ if __name__ == '__main__':
             url = 'youtube.com'
             site(url)
 
+        elif 'music' in query:
+            url = 'https://www.hungama.com/playlists/top-hits-of-arijit-singh/91368/'
+            site(url)
+
+        elif 'visual studio' in query:
+            code_path = 'C:\\Users\\rajan\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+            os.startfile(code_path)
+
+        elif 'whatsapp' in query:
+            url = 'https://web.whatsapp.com/'
+            site(url)
+
         elif 'close' in query:
             break
