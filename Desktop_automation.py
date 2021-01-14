@@ -52,8 +52,12 @@ def takeComand():
     
     return query
 
+
+# Use this function only when you want to use a browser other than than internet edge/explorer
+# This function will open your query in the browser you prefer. 
+
 def site(url):
-    chrome_path = r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
+    chrome_path = r'   '    #fill with the path of the browser you want to use in this section
     webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
     webbrowser.get('chrome').open(url)
 
@@ -74,11 +78,11 @@ if __name__ == '__main__':
             site(url)
 
         elif 'music' in query:
-            url = 'https://www.hungama.com/playlists/top-hits-of-arijit-singh/91368/'
+            url = 'https://www.hungama.com/'
             site(url)
 
         elif 'visual studio' in query:
-            code_path = 'C:\\Users\\rajan\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+            code_path = '   '              #Fill the path of the application in this section
             os.startfile(code_path)
 
         elif 'whatsapp' in query:
