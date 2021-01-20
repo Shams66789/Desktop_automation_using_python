@@ -99,6 +99,6 @@ if __name__ == '__main__':
         elif 'telegram' in query:
             url = '  https://web.telegram.org/#/im '
             site(url)
-
+            
         elif 'close' in query:
             break
