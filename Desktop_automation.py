@@ -42,19 +42,21 @@ def takeComand():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening....")
+        speak('Listening')
         r.pause_threshold = 0.5
-        r.energy_threshold = 1200
+        r.energy_threshold = 10000
         audio = r.listen(source)
 
     try:
         print("Recognizing...")
         query = r.recognize_google(audio, language='en-in')
-        print("user said:", query) 
+        print("user said:", query)
 
     except Exception as e:
         #print(e)
 
         print("Say that again please ....")
+        speak('say again')
         return "None"
     
     return query
@@ -99,6 +101,11 @@ if __name__ == '__main__':
         elif 'telegram' in query:
             url = '  https://web.telegram.org/#/im '
             site(url)
-            
+
+        elif 'coursera' in query:
+            url = 'https://www.coursera.org'
+            site(url)
+
         elif 'close' in query:
+            speak('happy to help you')
             break
