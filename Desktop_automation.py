@@ -102,10 +102,14 @@ if __name__ == '__main__':
             url = '  https://web.telegram.org/#/im '
             site(url)
 
-        elif 'coursera' in query:
+        elif 'learning' in query:
             url = 'https://www.coursera.org'
             site(url)
 
-        elif 'close' in query:
+        elif 'mail' in query:
+            url = 'https://mail.google.com/mail/u/0/#inbox'
+            site(url)
+
+        elif 'thank you' in query:
             speak('happy to help you')
             break
