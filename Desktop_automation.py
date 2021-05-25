@@ -110,6 +110,13 @@ if __name__ == '__main__':
             url = 'https://mail.google.com/mail/u/0/#inbox'
             site(url)
 
+        elif 'wikipedia' in query:
+            speak('say the topic you want to know about')
+            topic = takeComand().lower()
+            wikipedia.summary(topic)
+            print(results)
+
+
         elif 'thank you' in query:
             speak('happy to help you')
             break
